@@ -75,6 +75,15 @@ Git に慣れてきたら使うコマンド
 ### git tag
 
 
+
+## Other
+
+### .gitignore
+
+git で管理しない（変更履歴を取らない）ファイルをこのファイルに記述する
+
+
+
 ## BOUNUS: Git GUI Tools for Windows
 
 * GitHub for Windows
