@@ -1,8 +1,6 @@
-# Git Practice
+# Git Practice - Git コマンド覚書
 
 Git の練習も兼ねた Git コマンド覚書
-
-# Git コマンド覚書
 
 ## Git Setting
 
@@ -18,7 +16,7 @@ Git の設定を表示・変更する。
 
 ``git config [value]`` リポジトリの Git の設定
 
-
+---
 
 ## Git Basics: Ground level
 
@@ -31,7 +29,7 @@ Git の設定を表示・変更する。
 ### git add
 
 変更ファイルを***ステージングエリア***に追加する  
-インデックスとも言う
+***インデックス***とも言う
 
 ステージングリアは**コミット対象ファイルを管理するところ**
 
@@ -78,6 +76,7 @@ Git の設定を表示・変更する。
 
 ``git log --all`` すべてのブランチのコミットメッセージを表示する
 
+---
 
 ## Git Basics: Branch, checkout, merge...etc
 
@@ -117,11 +116,13 @@ Git に慣れてきたら使うコマンド
 
 ### git stash
 
+作業を一時的に保存する
+
 ### git rebase
 
+コミット履歴を変更する
 
-
-
+---
 
 ## Git'in GitHub
 
@@ -135,13 +136,24 @@ Git に慣れてきたら使うコマンド
 
 リモートリポジトリにローカルリポジトリの内容を反映する
 
+* ``-u(--set-upstream)`` 新規作成したリポジトリやブランチをプッシュする際、ローカルリポジトリのブランチとプッシュ先リポジトリのブランチの対応付けを行う。対応付けを行うとプッシュ時にブランチ名を省略することが出来る
+* ``--all`` すべてのブランチをプッシュする
+
 ### git remote
 
+リモートリポジトリを設定する
 
+``git remote [-v(--verbose)]``
+
+登録されているリポジトリの名前を表示  
+
+* ``-v(--verbose)`` リモートリポジトリの名前の後に、リモートリポジトリのURLを表示する
 
 ### git tag
 
+コミットにタグを設定する
 
+---
 
 ## Other
 
@@ -153,12 +165,15 @@ git で管理しない（変更履歴を取らない）ファイルをこのフ�
 
 パスごとの属性を定義する
 
+---
 
 ## ADDITIONAL: Git GUI Tools for Windows
 
 * GitHub for Windows
 * Source Tree
 * Visual Studio Tools for Git
+
+---
 
 ## ADDITIONAL: Git Repository Hosting Services
 
