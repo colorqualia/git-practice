@@ -215,7 +215,7 @@ git で管理しない（変更履歴を取らない）ファイルをこのフ�
 
 * GitHub for Mac
 * Source Tree
-* Git Tower
+* Tower
 
 ---
 
