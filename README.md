@@ -114,6 +114,12 @@ Git に慣れてきたら使うコマンド
 
 `git branch -d [branch name]` ブランチ（分岐）を削除する
 
+`git branch -v` or `git branch --verbose`
+
+`git branch -vv`
+
+`git branch -a` or `git branch --all`
+
 ### git checkout
 
 `git checkout [branch name]` ブランチを切り替える
@@ -144,6 +150,10 @@ Git に慣れてきたら使うコマンド
 
 作業を一時的に保存する
 
+### git reflog
+
+内部のログを見る
+
 ### git rebase
 
 コミット履歴を変更する
@@ -165,6 +175,9 @@ Git に慣れてきたら使うコマンド
 * `-u(--set-upstream)` 新規作成したリポジトリやブランチをプッシュする際、ローカルリポジトリのブランチとプッシュ先リポジトリのブランチの対応付けを行う。対応付けを行うとプッシュ時にブランチ名を省略することが出来る
 * `--all` すべてのブランチをプッシュする
 
+`git push -f origin [commit]:[branch name]` **リモートリポジトリを巻き戻す**  
+Example) `git push -f origin HEAD^:master` HEAD^ でもいい。
+
 ### git pull
 
 リモートリポジトリの変更を取得してマージする。
@@ -172,8 +185,7 @@ Git に慣れてきたら使うコマンド
 ### git fetch
 
 リモートリポジトリの変更を取得する。**変更取得後にマージは行わない**  
-
-* `fetch` コマンド `merge` コマンドを分けて実行するメリットは、マージされる前に変更点を確認できるところです
+`fetch` コマンド `merge` コマンドを分けて実行するメリットは、マージされる前に変更点を確認できるところです
 
 ### git remote
 
